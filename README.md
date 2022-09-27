@@ -1,11 +1,9 @@
 # vp remote with esp
 
+## 3D Print parts
+
 ![vue_01](_img/3d.PNG)
 ![vue_01](_img/3d_2.PNG)
-![wiring](_img/servo_firebettle.png)
-![ui](_img/ui.PNG)
-
-## Print parts
 
 `_3d/_exports/`
 
@@ -18,6 +16,15 @@ motor_case|1|
 servo_finger_transmission|1|
 slider|2|
 square|4|
+
+## Elec and Wiring
+
+- Firebeetle esp32
+- Servomoteur C512
+
+![wiring](_img/servo_firebettle.png)
+![ui](_img/ui.PNG)
+![photo](_img/photo.jpg)
 
 ## Raspberry Pi
 

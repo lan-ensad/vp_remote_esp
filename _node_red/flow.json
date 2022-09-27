@@ -1,0 +1,112 @@
+[
+    {
+        "id": "76823a7dd57d1f32",
+        "type": "group",
+        "z": "d45aff0facb9ebce",
+        "name": "VP",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "035ad9cccd2c8cce",
+            "54f2462b5af337de"
+        ],
+        "x": 1074,
+        "y": 79,
+        "w": 312,
+        "h": 82
+    },
+    {
+        "id": "035ad9cccd2c8cce",
+        "type": "mqtt out",
+        "z": "d45aff0facb9ebce",
+        "g": "76823a7dd57d1f32",
+        "name": "VpTrigger",
+        "topic": "vp",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1a4ea5216eacef08",
+        "x": 1300,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "54f2462b5af337de",
+        "type": "ui_button",
+        "z": "d45aff0facb9ebce",
+        "g": "76823a7dd57d1f32",
+        "name": "",
+        "group": "510d5a9182b58719",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "passthru": false,
+        "label": "Trigger",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "Green",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1160,
+        "y": 120,
+        "wires": [
+            [
+                "035ad9cccd2c8cce"
+            ]
+        ]
+    },
+    {
+        "id": "1a4ea5216eacef08",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "510d5a9182b58719",
+        "type": "ui_group",
+        "name": "VP",
+        "tab": "f2f46ab7a1dae175",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f2f46ab7a1dae175",
+        "type": "ui_tab",
+        "name": "VP",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
